@@ -8,27 +8,33 @@
         div.conteiner{
            background-color: lightsalmon;
            display: flex;
+           flex-flow: row nowrap;
         }
           
         div.item{
          background-color: lightskyblue;
          border: 1px solid black;
          text-align: center;
-         padding: 10px;
-         flex: auto;
+        
         }
+        #q{
+             flex: 1 1 200px;
+        }
+        #w{
+            flex: 4 1 200px;
+        }
+        #e{
+            flex: 0 1 200px;
+        }
+        
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-        <div class="item">H</div>
+        <div class="item" id="q">A</div>
+        <div class="item" id="w">B</div>
+        <div class="item" id="e">C</div>
+        
 
 
     </div>
